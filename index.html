@@ -34,7 +34,7 @@
             padding: clamp(15px, 4vw, 25px);
             text-align: center;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: clamp(20px, 5vw, 40px);
+            margin-bottom: 0;
             width: 100%;
         }
 
@@ -47,13 +47,24 @@
             text-transform: uppercase;
         }
 
+        .instruction-text {
+            color: white;
+            text-align: center;
+            padding: clamp(10px, 2vw, 15px);
+            font-size: clamp(14px, 3vw, 18px);
+            line-height: 1.5;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+        }
+
         .main-content {
             flex: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: clamp(15px, 3vw, 30px);
             width: 100%;
+            padding-top: clamp(10px, 2vw, 20px);
         }
 
         .container {
@@ -221,6 +232,11 @@
     <header class="header">
         <h1>WZ Analysis</h1>
     </header>
+
+    <div class="instruction-text">
+        Inicie uma conversa no WhatsApp sem precisar gravar o número.<br>
+        Digite o número com DDD e clique em Abrir no WhatsApp para iniciar.
+    </div>
 
     <main class="main-content">
         <div class="container">
